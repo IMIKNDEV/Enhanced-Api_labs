@@ -10,5 +10,6 @@ Route::get('/user', function (Request $request) {
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/blueprints', [BlueprintController::class, 'index']);
+    Route::post('/blueprints', [BlueprintController::class, 'store']);
     Route::get('/blueprints/{blueprint}', [BlueprintController::class, 'show']);
 });
