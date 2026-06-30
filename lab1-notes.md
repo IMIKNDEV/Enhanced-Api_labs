@@ -92,16 +92,3 @@ Expected: Status 200, single blueprint object.
 ```
 
 </details>
-
-Request C — verify auth protection
-
-Same as Request A but **without** the `Authorization` header.
-
-Expected: Status 401, error message.
-
-Step 4 — Take screenshots
-
-In Postman, click the eye icon → View in full screen (or Ctrl+P to hide sidebar), then take screenshots of:
-
-1. Request A — showing the URL, headers (`Authorization: Bearer ...`), status 200, and the JSON response
-2. Request B — showing the URL `.../blueprints/1`, status 200, and the JSON response
